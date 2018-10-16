@@ -1,0 +1,176 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~弹出框基础~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.expand-transition {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.expand-enter, .expand-leave {
+  opacity: 0;
+}
+
+.expand-enter .layer-container,
+.expand-leave .layer-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~角色管理弹~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.layer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.layer-container {
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .03s ease;
+}
+
+.layer-header {
+  margin-top: 0;
+  background-color: #42a5f6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.layer-header span {
+  float: right;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.projectSpan {
+  display: inline-block;
+  width: 30%;
+  height: 30px;
+}
+
+.updateRoleSureBtn {
+  padding: 1% 40%;
+  padding-top: 0;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+/*.adcloud_pagination{
+  position: relative;
+  left: -44px;
+}*/
+.btnHeight {
+  height: 25px;
+  width: 100px;
+}
+
+.btnHeight > span {
+  position: relative;
+  top: -5px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用户管理~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*用户查询条件*/
+.usersQueryTerms {
+  display: inline-block;
+  width: 25%;
+  margin-right: 1.2%;
+}
+
+.usersQueryTerms > span {
+  background: #F5F5F5;
+  width: 30%;
+  height: 25px;
+}
+
+.usersQueryTerms > select {
+  background: white;
+  color: #222222;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  height: 25px;
+}
+
+.usersQueryTerms > input {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  height: 25px;
+}
+
+/*用户表格*/
+
+.divDisplayInline {
+  display: inline;
+}
+
+.logBtnHeight {
+  height: 25px;
+  width: 100px;
+}
+
+.logBtnHeight > span {
+  font-size: 12px;
+  position: relative;
+  top: -2px;
+}
+
+/*弹出框 : 信息提示*/
+#messageBox {
+  position: relative;
+  left: 40%;
+  width: 20%;
+}
+
+/*弹出框 : 信息提示*/
+#updateBox {
+  position: relative;
+  left: 35%;
+  width: 20%;
+  height: 200px;
+}
+
+.updateTop span {
+  position: relative;
+  top: -7px;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.updateMiddle {
+  margin: 30px 0;
+}
+
+.updateMiddle select {
+  background: white;
+  color: #222222;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 100%;
+}
+
+.updateBottom button {
+  width: 100%;
+}
+
+.projectsLi {
+  display: inline;
+  padding: 0 10px
+}
+
+@media screen and ( max-width: 980px ) {
+  #usersTableOutDiv {
+    width: 580px;
+  }
+}
